@@ -4,7 +4,7 @@ minetest.register_craftitem("bandage:bandage", {
 	on_use = function(itemstack, user, pointed_thing)
 		local hp = user:get_hp()
 		if hp ~= 20 then
-			user:set_hp(hp + 4)
+			user:set_hp(hp + 2)
 			itemstack:take_item()
 		end
 		return itemstack
