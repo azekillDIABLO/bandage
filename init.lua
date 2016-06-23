@@ -12,7 +12,7 @@ minetest.register_craftitem("bandage:bandage", {
 })
 
 minetest.register_on_player_hpchange(function(player, hp_change)
-	if hp_change >= 0 then
+	if hp_change >= 2 then
 		return hp_change
 	end
 
