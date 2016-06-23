@@ -3,11 +3,6 @@ minetest.register_craftitem("bandage:bandage", {
 	inventory_image = "bandage_bandage.png",
 })
 
-minetest.register_craftitem("bandage:bandage", {
-	description = "Bandage",
-	inventory_image = "bandage_bandage.png",
-})
-
 minetest.register_on_player_hpchange(function(player, hp_change)
 	if hp_change >= 0 then
 		return hp_change
